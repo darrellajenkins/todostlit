@@ -22,7 +22,7 @@ def add_todo():
     task = st.session_state["add_todo"] + "\n"
     todos.append(task)
     write(todos)
-    st.session_state["add_todo"] = ""  # Clear the input field - added by Claude.
+    st.session_state["add_todo"] = ""
 
 
 todos = get()
